@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comidas Rapidas</title>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+        body {
+            background-image: url('Fondo.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            display: flex; 
+            justify-content: space-around; 
+            align-items: center; 
+            flex-wrap: wrap; 
+        }
+        h1 {
+            font-family: "Lobster", sans-serif;
+            font-size: 60px;
+            text-align: center;
+            width: 100%; 
+        }
+        .Contenedor {
+            max-width: 45%;
+            margin: 10px; 
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .Contenedor img {
+            width: 48%; /* Establece el ancho de cada imagen */
+            height: auto;
+            border-radius: 35px;
+            margin-bottom: 10px; /* Añade un margen inferior para separar las imágenes */
+        }
+        .video-container {
+            border-radius: 25px;
+            width: 35%; 
+            height: 400px; 
+        }
+
+        .video-container object,
+        .video-container embed {
+            width: 100%;
+            height: 100%;
+            border-radius: 20px; 
+            overflow: hidden;
+        }
+        object{
+            border-radius: 25px;
+        }
+        img{
+            width: 300px;
+            height: 400px;
+        }
+        
+    </style>
+</head>
+<body>  
+    <h1>Comida Rapida :0</h1>
+    <div class="Contenedor">
+        <img src="HAMBUR.jfif" usemap="#mapa" alt="Comida" />
+        <img src="papas.jfif" usemap="#mapa2" alt="Comida" />
+        <img src="gaseosa.jpg" usemap="#mapa3" alt="Comida" />
+        <img src="hotdog.jpg" usemap="#mapa4" alt="Comida" />
+    </div>  
+ 
+    <div class="video-container">
+        <object>
+            <param name="movie" value="https://www.youtube.com/v/KqGzee2YlOc?version=3&loop=1&playlist=KqGzee2YlOc"></param>
+            <param name="wmode" value="transparent"></param>
+            <embed src="https://www.youtube.com/v/KqGzee2YlOc?version=3&loop=1&playlist=KqGzee2YlOc" type="application/x-shockwave-flash" wmode="transparent"></embed>
+        </object>
+    </div>
+      
+
+    <map name="mapa">
+        <area class="area1" shape="circle" coords="100,100,80" href="https://www.rappi.com.co/santa-marta/restaurantes/category/hamburguesa" alt="Área 1">
+    </map>
+    <map name="mapa2">
+        <area class="area1" shape="circle" coords="100,100,80" href="https://www.eltiempo.com/cultura/gastronomia/recetas-faciles-el-secreto-de-las-papas-a-la-francesa-581309" alt="Área 1">
+    </map>
+    <map name="mapa3">
+        <area class="area1" shape="circle" coords="100,100,80" href="https://www.entuhogar.coca-cola.com.co/gaseosa-quatro-original-1-l-introduccion" alt="Área 1">
+    </map>
+    <map name="mapa4">
+        <area class="area1" shape="circle" coords="100,100,80" href="https://www.vvsupremo.com/recipe/hot-dogs-a-la-mexicana-2/?lang=es" alt="Área 1">
+    </map>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>   
+    <style>
+        body{
+            background-color: #d3d8e8;
+            padding: 2%;
+            display: flex;
+            justify-content: center;
+        }
+        
+        .Contenedor{
+            width: 28%;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 2%;
+            float: left; 
+            margin-right: 2%; 
+        }
+    </style>
+</head>
+<body> 
+    <div class="Contenedor">
+        <h3>Rellena tu CV</h3>
+        Nombre<br>
+        <input type="text" name="Nombre" style="width: 45%;"><br> <br> 
+        Apellidos<br>
+        <input type="text" name="Apellidos" style="width: 80%;"><br><br>
+        Contraseña<br>
+        <input type="password" name="Contraseña" style="width: 45%;"><br><br>
+        DNI<br>
+        <input type="text" name="DNI" style="width: 25%;"><br><br>  
+        Sexo<br> 
+        <input type="radio" name="Sexo" value="Hombre" checked>Hombre<br>
+        <input type="radio" name="Sexo" value="Mujer" checked>Mujer<br><br>
+        Incluir mi foto
+        <input type="text" name="Foto" style="width: 30%;"> 
+        <input type="submit" name="buscar" value="Elegir" /><br><br>
+
+        <input type="checkbox" name="">Suscribirme al boletin de novedades<br><br>
+        <input type="button" name="Guardar" value="Guardar cambios">
+        <input type="button" name="Guardar" value="Borrar los datos introducidos">
+    </div> 
+    <div class="Contenedor">
+        <h3>Rellena tu CV</h3>
+        <fieldset>
+            <br>
+            <legend>Datos personales</legend>
+            <select id="provincias" name="provincias">
+                <option value="" disabled selected>Seleccione</option>
+                <option value="Norte">Norte</option>
+                <option value="Nordeste">Nordeste</option>
+                <option value="Occidente">Occidente</option>
+                <option value="Oriente">Oriente</option>
+            </select><br><br><br>
+            
+            
+              <label for="fecha_nacimiento">Fecha de nacimiento:</label><br>
+                <input type="text" id="dia" name="dia" style="width: 7%;"> de
+                <select id="mes" name="mes" style="width: 100px;">
+                    <option>Enero</option>
+                    <option>Febrero</option>
+                    <option>Marzo</option>
+                    <option>Abril</option>
+                    <option>Mayo</option>
+                    <option>Junio</option>
+                    <option>Julio</option>
+                    <option>Agosto</option>
+                    <option>Septiembre</option>
+                    <option>Octubre</option>
+                    <option>Noviembre</option>
+                    <option>Diciembre</option>
+                </select> de
+                <input type="text" id="ano" name="ano" style="width: 10%;"><br><br><br>
+                Temas de interes<br><br>
+                
+                <textarea id="descripcion" name="descripcion" cols="40" rows="5"></textarea><br>
+
+          </fieldset>
+    </div> 
+</body>
+</html>
